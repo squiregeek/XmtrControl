@@ -12,10 +12,10 @@ step-by-step guide will ensure all dependencies are covered.
 
 Move to the end of the file and add:
 
-PATH="${PATH}:/home/pi/ABElectronics_Python_Libraries/ADCPi"
+PATH="${PATH}:/home/pi/ABElectronics_Python3_Libraries/ADCPi"
 export PATH
 
-PYTHONPATH="${PYTHONPATH}:/home/pi/ABElectronics_Python_Libraries/ADCPi"
+PYTHONPATH="${PYTHONPATH}:/home/pi/ABElectronics_Python3_Libraries/ADCPi"
 export PYTHONPATH
 
 6.	Reboot
@@ -38,7 +38,7 @@ After=multi-user.target
 
 [Service]
 Type=idle
-ExecStart=/usr/bin/python /home/pi/myscript.py
+ExecStart=/usr/bin/python3 /home/pi/myscript.py
 
 [Install]
 WantedBy=multi-user.target
